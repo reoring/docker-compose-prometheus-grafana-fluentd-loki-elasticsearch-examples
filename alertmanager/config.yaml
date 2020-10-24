@@ -1,0 +1,17 @@
+global:
+  slack_api_url: 'YOUR_SLACK_URL'
+
+route:
+  receiver: 'slack'
+  routes:
+   - match:
+      severity: critical
+     receiver: pagerduty
+
+receivers:
+  - name: 'slack'
+    slack_configs:
+    - channel: '#your_channel'
+  - name: 'pagerduty'
+    pagerduty_configs:
+    - service_key: $YOUR_PAGER_DUTY_SERVICE_KEY
