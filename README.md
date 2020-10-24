@@ -1,2 +1,1 @@
-# prometheus-grafana-fluentd-loki-elasticsearch-examples
-# docker-compose-prometheus-grafana-fluentd-loki-elasticsearch-examples
+This repository is exmaple that up easily development environemtn of grafana and promethues, fluentd, loki, elasticsearch.
